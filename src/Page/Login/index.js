@@ -58,33 +58,7 @@ export default class Login extends Component {
 
   handleSubmit = (e) => {
     const isValid = this.validate();
-    if (isValid) {
-      fetch(process.env.REACT_APP_SERVER + "admin/login", {
-        method: "POST",
-        body: JSON.stringify({
-          username: this.state.username,
-          password: this.state.password,
-        }),
-        headers: { "Content-Type": "application/json" },
-      })
-        .then((res) => {
-          return res.json();
-        })
-        .then((res) => {
-          if (res.token === undefined) {
-            this.setState({
-              LoginFail: true,
-            });
-          } else {
-            localStorage.setItem("jwt", res.token);
-            sessionStorage.setItem("isLogin", true);
-            this.props.history.push("/home");
-          }
-        })
-        .catch((err) => {
-          alert(err);
-        });
-    }
+    console.log(this.state);
   };
 
   render() {
