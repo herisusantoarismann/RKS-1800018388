@@ -110,7 +110,7 @@ class Home extends Component {
                 <Menu.Item
                   name="Home"
                   active={activeItem === "Home"}
-                  onClick={() => this.props.history.push("/home")}
+                  onClick={() => this.props.history.push("/dashboard")}
                 />
                 <Menu.Item
                   name="Mass Mailer"
