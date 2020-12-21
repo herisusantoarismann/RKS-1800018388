@@ -58,6 +58,7 @@ export default class Login extends Component {
 
   handleSubmit = (e) => {
     const isValid = this.validate();
+    this.props.history.push("/dashboard");
     console.log(this.state);
   };
 

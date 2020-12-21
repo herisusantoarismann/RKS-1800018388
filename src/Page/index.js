@@ -1,4 +1,5 @@
 import Login from "./Login";
-import NotFound from './NotFound'
+import NotFound from "./NotFound";
+import Home from "./Home";
 
-export { Login, NotFound };
+export { Login, NotFound, Home };
