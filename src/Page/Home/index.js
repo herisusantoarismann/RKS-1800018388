@@ -139,7 +139,7 @@ class Home extends Component {
               <h2>Seminar</h2>
               <Button
                 primary
-                onClick={() => this.props.history.push("/seminars/add")}
+                onClick={() => this.props.history.push("/seminar/add")}
               >
                 Tambah Baru
               </Button>
