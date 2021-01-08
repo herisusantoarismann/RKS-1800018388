@@ -10,6 +10,7 @@ import {
 } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 import "./style.scss";
+import { Redirect } from "react-router-dom";
 import Swal from "sweetalert2";
 import { UserDefault } from "../../assets";
 
@@ -23,6 +24,7 @@ class Home extends Component {
           title: "Simposium Endokrinologi Klinik VII ",
           description: "Simposium Endokrinologi Klinik VII ",
           date: "25 Januari 2009 ",
+          dateinFormat: "2009-01-25",
           duration: "120",
         },
         {
@@ -30,6 +32,7 @@ class Home extends Component {
           title: "Kongres Nasional VIII Perkeni ",
           description: "Kongres Nasional VIII Perkeni ",
           date: "29 Juli 2009 ",
+          dateinFormat: "2009-07-29",
           duration: "60",
         },
         {
@@ -37,6 +40,7 @@ class Home extends Component {
           title: "4th DOC Link",
           description: "4th DOC Link",
           date: "10 Juli 2010 ",
+          dateinFormat: "2010-07-10",
           duration: "90",
         },
         {
@@ -44,11 +48,11 @@ class Home extends Component {
           title: "Joint Simposium SDU XXII, SOBU -5 ",
           description: "Joint Simposium SDU XXII, SOBU -5 ",
           date: "25 Juni 2012 ",
+          dateinFormat: "2012-0061-25",
           duration: "120",
         },
       ],
       activeItem: "Home",
-      authenticate: false,
     };
 
     this.handleDelete = this.handleDelete.bind(this);
@@ -98,6 +102,7 @@ class Home extends Component {
 
   render() {
     const { activeItem, data } = this.state;
+
     return (
       <Fragment>
         <div className="wrapper">
@@ -173,9 +178,15 @@ class Home extends Component {
                               color="yellow"
                               name="edit outline"
                               onClick={() =>
-                                this.props.history.push(
-                                  `/seminars/update/${item.id}`
-                                )
+                                this.props.history.push({
+                                  pathname: "/seminar/update/" + item.id,
+                                  data: {
+                                    title: item.title,
+                                    description: item.description,
+                                    date: item.dateinFormat,
+                                    durationMinutes: item.duration,
+                                  },
+                                })
                               }
                             />
 
@@ -188,6 +199,22 @@ class Home extends Component {
                               onClick={() => {
                                 this.handleDelete(item.id);
                               }}
+                            />
+
+                            <Icon
+                              link
+                              bordered
+                              inverted
+                              color="blue"
+                              name="registered"
+                              onClick={() =>
+                                this.props.history.push({
+                                  pathname: "/registration/" + item.id,
+                                  data: {
+                                    title: item.title,
+                                  },
+                                })
+                              }
                             />
                           </Table.Cell>
                         </Table.Row>

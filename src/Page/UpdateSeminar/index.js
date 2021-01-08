@@ -9,7 +9,6 @@ import {
   Button,
 } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
-import "./style.scss";
 import Swal from "sweetalert2";
 import { UserDefault } from "../../assets";
 
@@ -22,11 +21,18 @@ class Home extends Component {
       date: "",
       durationMinutes: "",
       activeItem: "Home",
+      authenticate: false,
     };
   }
 
   componentDidMount() {
-    document.title = "Seminara | Add Seminar";
+    document.title = "Seminara | Update Seminar";
+    this.setState({
+      title: this.props.location.data.title,
+      description: this.props.location.data.description,
+      date: this.props.location.data.date,
+      durationMinutes: this.props.location.data.durationMinutes,
+    });
   }
 
   handleItemClick = (e, { name }) => {
@@ -45,20 +51,8 @@ class Home extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    Swal.fire({
-      title: "Adding Seminar",
-      text: "Are you sure?",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Add",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire("Good job!", "Data Berhasil Ditambah!", "success");
-        this.props.history.push("/dashboard");
-      }
-    });
+    Swal.fire("Good job!", "Data Berhasil Diupdate!", "success");
+    this.props.history.push("/dashboard");
   };
 
   render() {
@@ -108,7 +102,7 @@ class Home extends Component {
           <div className="content">
             <div className="content-title">
               <h2>
-                <a href="/dashboard">Seminar</a> / Add
+                <a href="/seminars">Seminar</a> / Update
               </h2>
             </div>
             <div className="content-main">
@@ -161,7 +155,7 @@ class Home extends Component {
                       <div className="add-input-place">
                         <Input
                           placeholder="Duration"
-                          name="durationMinutes"
+                          name="duration"
                           value={durationMinutes}
                           onChange={this.handleChange}
                         />
