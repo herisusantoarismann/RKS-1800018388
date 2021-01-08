@@ -51,8 +51,29 @@ class Home extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    Swal.fire("Good job!", "Data Berhasil Diupdate!", "success");
-    this.props.history.push("/dashboard");
+    Swal.fire({
+      title: "Updating Seminar",
+      text: "Are you sure?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Update",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Good Joob!",
+          text: "Seminar Berhasil Diupdate",
+          type: "success",
+          icon: "success",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+        setTimeout(() => {
+          this.props.history.push("/dashboard");
+        }, 3000);
+      }
+    });
   };
 
   render() {

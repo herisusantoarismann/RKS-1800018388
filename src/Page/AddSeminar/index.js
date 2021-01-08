@@ -55,8 +55,17 @@ class Home extends Component {
       confirmButtonText: "Add",
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire("Good job!", "Data Berhasil Ditambah!", "success");
-        this.props.history.push("/dashboard");
+        Swal.fire({
+          title: "Good Joob!",
+          text: "Seminar Berhasil Ditambah",
+          type: "success",
+          icon: "success",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+        setTimeout(() => {
+          this.props.history.push("/dashboard");
+        }, 3000);
       }
     });
   };

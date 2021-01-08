@@ -35,9 +35,12 @@ class Registration extends React.Component {
     e.preventDefault();
     Swal.fire("Good job!", "Data Berhasil Diupdate!", "success");
     this.props.history.push({
-      pathname: "/registration/" + item.id,
+      pathname: "/successful-registration",
       data: {
-        title: item.title,
+        title: this.props.location.data.title,
+        name: this.state.name,
+        phone: this.state.phone,
+        email: this.state.email,
       },
     });
   };

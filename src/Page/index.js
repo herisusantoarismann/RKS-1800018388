@@ -5,6 +5,7 @@ import MassMailer from "./MassMailer";
 import AddSeminar from "./AddSeminar";
 import UpdateSeminar from "./UpdateSeminar";
 import Registration from "./Registration";
+import RegistrationSuccess from "./RegistrationSuccess";
 
 export {
   Login,
@@ -14,4 +15,5 @@ export {
   AddSeminar,
   UpdateSeminar,
   Registration,
+  RegistrationSuccess,
 };

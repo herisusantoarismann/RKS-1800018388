@@ -7,6 +7,7 @@ import {
   MassMailer,
   NotFound,
   Registration,
+  RegistrationSuccess,
   UpdateSeminar,
 } from "./Page";
 
@@ -20,6 +21,10 @@ function App() {
         <Route path="/seminar/add" component={AddSeminar} />
         <Route path="/seminar/update/:id" component={UpdateSeminar} />
         <Route path="/registration/:id" component={Registration} />
+        <Route
+          path="/successful-registration"
+          component={RegistrationSuccess}
+        />
         <Route component={NotFound} />
       </Switch>
     </Router>
