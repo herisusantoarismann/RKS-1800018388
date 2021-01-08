@@ -1,6 +1,7 @@
 import React from "react";
 import { Redirect, withRouter } from "react-router-dom";
 import { Button, Form } from "semantic-ui-react";
+import Swal from "sweetalert2";
 import "./style.scss";
 import "semantic-ui-css/semantic.min.css";
 
@@ -33,25 +34,15 @@ class Registration extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire("Good job!", "Data Berhasil Diupdate!", "success");
-    this.props.history.push("/dashboard");
+    this.props.history.push({
+      pathname: "/registration/" + item.id,
+      data: {
+        title: item.title,
+      },
+    });
   };
 
   render() {
-    const { redirect, data } = this.state;
-
-    if (redirect) {
-      return (
-        <Redirect
-          to={{
-            pathname: "/app/registrasi-sukses",
-            data: {
-              data: data,
-              title: this.state.title,
-            },
-          }}
-        ></Redirect>
-      );
-    }
     return (
       <React.Fragment>
         <div className="register-bg"> </div>
