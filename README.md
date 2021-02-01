@@ -17,12 +17,12 @@ C. URL aplikasi
 
 Aplikasi juga menggunakan beberapa pendukung diantaranya :
 
-* - React Router v5
+ - React Router v5
 
-* - Semantic-React v2
+- Semantic-React v2
 
-* - Sweetalert2 v10
+ - Sweetalert2 v10
 
-* - Sass v4
+ - Sass v4
 
 Berikut Screenshot dari aplikasi :
