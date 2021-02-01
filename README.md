@@ -27,3 +27,5 @@ Aplikasi juga menggunakan beberapa pendukung diantaranya :
  - Sass v4
 
 Berikut Screenshot dari aplikasi :
+
+![Alt text](./FE_1.png?raw=true)
