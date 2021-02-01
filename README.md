@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Tentang Aplikasi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi merupakan aplikasi admin bagi pengelolaan seminar. Aplikasi ini dikembangkan dengan React JS.
 
-## Available Scripts
+Aplikasi mengacu pada wireframe sebelumnya walaupun terdapat beberapa tambahan halaman. Berikut link :
 
-In the project directory, you can run:
+[Folder UTS](https://drive.google.com/drive/folders/1yiz1o1FNoYw0Pi9-Iu8qvOt-te1DLXxZ?usp=sharing "GDrive UTS")
 
-### `yarn start`
+Berikut file/direktori penting aplikasi :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A. Page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* src/Page
 
-### `yarn test`
+B. Assets
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* src/assets
 
-### `yarn build`
+C. URL aplikasi
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* src/app.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Aplikasi juga menggunakan beberapa pendukung diantaranya :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - React Router v5
 
-### `yarn eject`
+- Semantic-React v2
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ - Sweetalert2 v10
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - Sass v4
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Berikut Screenshot dari aplikasi :
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Home
+![Alt text](./FE_1.png?raw=true)
 
-## Learn More
+2. Mass Mailer
+![Alt text](./FE_2.png?raw=true)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Update Seminar
+![Alt text](./FE_3.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. List Participants
+![Alt text](./FE_4.png?raw=true)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Login
+![Alt text](./FE_5.png?raw=true)
