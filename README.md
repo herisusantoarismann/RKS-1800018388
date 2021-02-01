@@ -43,3 +43,9 @@ Berikut Screenshot dari aplikasi :
 
 4. Login
 ![Alt text](./FE_5.png?raw=true)
+
+5. Registrasi Peserta
+![Alt text](./FE_4.png?raw=true)
+
+6. Peserta Sukses Registrasi
+![Alt text](./FE_6.png?raw=true)
