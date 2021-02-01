@@ -4,7 +4,7 @@ Aplikasi merupakan aplikasi admin bagi pengelolaan seminar. Aplikasi ini dikemba
 
 Aplikasi mengacu pada wireframe sebelumnya walaupun terdapat beberapa tambahan halaman. Berikut link :
 
-[I'm an inline-style link with title](https://drive.google.com/drive/folders/1yiz1o1FNoYw0Pi9-Iu8qvOt-te1DLXxZ?usp=sharing "GDrive UTS")
+[Folder UTS](https://drive.google.com/drive/folders/1yiz1o1FNoYw0Pi9-Iu8qvOt-te1DLXxZ?usp=sharing "GDrive UTS")
 
 Berikut file/direktori penting aplikasi :
 
