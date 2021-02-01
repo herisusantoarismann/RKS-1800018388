@@ -3,6 +3,7 @@
 Aplikasi merupakan aplikasi admin bagi pengelolaan seminar. Aplikasi ini dikembangkan dengan React JS.
 
 Berikut file/direktori penting aplikasi :
+
 A. Page
 
 * src/Page
