@@ -28,4 +28,4 @@ Aplikasi juga menggunakan beberapa pendukung diantaranya :
 
 Berikut Screenshot dari aplikasi :
 
-![Alt text](./FE_1.png?raw=true)
+![Home](./FE_1.png?raw=true)
