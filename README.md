@@ -41,8 +41,5 @@ Berikut Screenshot dari aplikasi :
 3. Update Seminar
 ![Alt text](./FE_3.png?raw=true)
 
-4. List Participants
-![Alt text](./FE_4.png?raw=true)
-
-5. Login
+4. Login
 ![Alt text](./FE_5.png?raw=true)
